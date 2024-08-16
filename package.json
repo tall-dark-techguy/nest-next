@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "start:dev": "turbo run dev",
+    "start:prod": "node apps/api/dist/main"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.14"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "packageManager": "yarn@1.22.19",
+  "name": "nest-next"
+}
