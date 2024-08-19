@@ -1,4 +1,5 @@
 "use client";
+import { BASE_URL } from "@/constants";
 import { useState } from "react";
 
 export default function Contact() {
@@ -12,7 +13,7 @@ export default function Contact() {
     const data = { fullName, email, message };
 
     try {
-      const response = await fetch("http://localhost:8080/api/message", {
+      const response = await fetch(BASE_URL + "/api/message", {
         method: "post",
         body: JSON.stringify(data),
       });
